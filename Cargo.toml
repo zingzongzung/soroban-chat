@@ -1,13 +1,11 @@
 [package]
-name = "skirmish11"
+name = "soroban-chat"
 version = "0.1.0"
 edition = "2021"
 
 [lib]
 crate-type = ["cdylib"]
-
-[dependencies]
-soroban-sdk = "20.0.0-rc2.2"
+ 
  
  
 
@@ -24,3 +22,6 @@ lto = true
 [profile.release-with-logs]
 inherits = "release"
 debug-assertions = true
+
+[dependencies]
+soroban-sdk = "20.0.0"
