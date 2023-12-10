@@ -137,22 +137,28 @@ At this moment all interactions are calling some actions on the Soroban Chat Out
 
 1. Create an [Outsystems account](https://www.outsystems.com/Platform/Signup)
 2. Download [Service Studio](https://www.outsystems.com/downloads/)
-3. Get [source code](https://www.outsystems.com/forge/component-overview/8431/gtree)
-4. Publish the code
+3. Get [source code](https://www.outsystems.com/forge/component-overview/17300/soroban-chat)
+4. Open the code downloaded   with Service Studio and publish it.
+5. Configure Outsystems Properties
 
 ### Configure Outsystems properties
 
-1. Configure network and contract
-
 Go to Outsystems service center, find the module and configure the following site properties:
+
+1. Configure network and contract
 
 - `RPCUrl` Set it to the RPC URL of the network you deployed the contract to
 - `NetworkPassPhrase` Set it to the corresponding Network PassPhrase
-- `ContractId` Set it to the contract id that you got in the deploy
+- `SorobanContractId` Set it to the contract id that you got in the deploy
 
-2. In order to get chat realtime messages the app is using Firebase Realtime Database to send/receive events, for that reason you need to create and configure a Firebase Developer account. You can follow steps at this [guide](https://www.outsystems.com/forge/component-documentation/1406/firebase/0) to help you through that process.
+1. In order to get chat realtime messages the app is using Firebase Realtime Database to send/receive events, for that reason you need to create and configure a Firebase Developer account. You can follow steps at this [guide](https://www.outsystems.com/forge/component-documentation/1406/firebase/0) to help you through that process.
 
 After that you can configure the following site properties:
-- `FirebaseId`
+
+- `APIKey` 
+- `DatabaseURL`
+- `FirebaseProjectId`
+- `ServiceAccountClientEmail`
+- `ServiceAccountPrivateKey`
 
 
