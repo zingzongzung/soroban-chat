@@ -130,8 +130,8 @@ With this implementation we show an alternative way to build web applications th
 At this moment all interactions are calling some actions on the Soroban Chat Outsystems module.
 
 
-The web app integrates with the freighter wallet via [JS](https://docs.freighter.app/docs/)
-For comunicating with Soroban Network it uses [js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
+- The web app integrates with the freighter wallet via [JS](https://docs.freighter.app/docs/)
+- For comunicating with Soroban Network it uses [js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
 
 ### Prepare the web app
 
@@ -146,11 +146,13 @@ For comunicating with Soroban Network it uses [js-stellar-sdk](https://github.co
 
 Go to Outsystems service center, find the module and configure the following site properties:
 
-`RPCUrl` Set it to the RPC URL of the network you deployed the contract to
-`NetworkPassPhrase` Set it to the corresponding Network PassPhrase
-`ContractId` Set it to the contract id that you got in the deploy
+- `RPCUrl` Set it to the RPC URL of the network you deployed the contract to
+- `NetworkPassPhrase` Set it to the corresponding Network PassPhrase
+- `ContractId` Set it to the contract id that you got in the deploy
 
 2. In order to get chat realtime messages the app is using Firebase Realtime Database to send/receive events, for that reason you need to create and configure a Firebase Developer account. You can follow steps at this [guide](https://www.outsystems.com/forge/component-documentation/1406/firebase/0) to help you through that process.
+
 After that you can configure the following site properties:
+- `FirebaseId`
 
 
