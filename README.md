@@ -127,12 +127,10 @@ The smart contract also defines several internal functions used to manage messag
 Outsystems is a low code platform that allows you to create mobile and web applications. Soroban chat is a web based application build with outsystems.
 
 With this implementation we show an alternative way to build web applications that integrate with Soroban. 
-
 At this moment all interactions are calling some actions on the Soroban Chat Outsystems module.
 
 
 The web app integrates with the freighter wallet via [JS](https://docs.freighter.app/docs/)
-
 For comunicating with Soroban Network it uses [js-stellar-sdk](https://github.com/stellar/js-stellar-sdk)
 
 ### Prepare the web app
