@@ -13,7 +13,7 @@ To use it you have to connect to it using
 
 
 
-## Overview
+## Smart Contract (Soroban)
 
 The smart contract defines a messaging system and implements various methods to initialize the contract, update asset addresses, send donations, send messages, retrieve messages, and get contacts.
 
@@ -120,31 +120,9 @@ The smart contract also defines several internal functions used to manage messag
 - `add_contact`: Adds a contact to the user's contact list.
 - `add_message`: Adds a message to the storage.
 
-## Usage Example
 
-Here's a brief example of how to use the smart contract:
 
-```rust
-// Initialize the contract
-Contract::initialize(env, admin_address, asset_address);
-
-// Update asset address
-Contract::update_asset_address(env, admin_address, new_asset_address);
-
-// Send a donation
-Contract::send_donation(env, from_address, to_address, donation_amount);
-
-// Send a text message
-Contract::send_message(env, from_address, to_address, text_message);
-
-// Retrieve messages
-let messages = Contract::get_messages(env, user1_address, user2_address);
-
-// Retrieve contacts
-let contacts = Contract::get_contacts(env, user_address);
-```
-
-### Outsystems
+## Outsystems
 
 Outsystems is a low code platform that allows you to create mobile and web applications. Soroban chat is a web based application build with outsystems.
 With this implementation we show an alternative way to build web applications that integrate with Soroban. At this moment all interactions are calling some actions on the Soroban Chat Outsystems module.
